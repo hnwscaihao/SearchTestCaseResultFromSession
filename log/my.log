@@ -1,0 +1,23 @@
+2020-02-07 09:51:00.437  INFO 31456 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 31456 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-07 09:51:00.437  INFO 31456 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-07 09:51:00.971  INFO 31456 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.878 seconds (JVM running for 36.698)
+2020-02-07 09:51:24.291  INFO 31456 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21216
+2020-02-07 09:51:31.397  INFO 31456 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21216
+2020-02-07 09:52:24.202  INFO 12732 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 12732 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-07 09:52:24.202  INFO 12732 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-07 09:52:24.551  INFO 12732 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.712 seconds (JVM running for 2.399)
+2020-02-07 09:52:26.991  INFO 12732 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21216
+2020-02-07 09:52:40.729  INFO 36756 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 36756 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-07 09:52:40.729  INFO 36756 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-07 09:52:41.100  INFO 36756 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.707 seconds (JVM running for 2.372)
+2020-02-07 09:52:41.780  INFO 36756 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21216
+2020-02-07 09:52:45.503  INFO 36756 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21216
+2020-02-07 10:01:36.090  INFO 36756 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21204
+2020-02-07 10:01:40.270  INFO 36756 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21208
+2020-02-07 10:01:44.018  INFO 36756 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21210
+2020-02-07 10:01:47.670  INFO 36756 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21206
+2020-02-07 10:04:32.480  INFO 36756 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21206
+2020-02-07 10:04:57.350  INFO 2216 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 2216 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-07 10:04:57.350  INFO 2216 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-07 10:04:57.730  INFO 2216 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.723 seconds (JVM running for 2.353)
+2020-02-07 10:04:59.670  INFO 2216 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 点击搜索session : 21203,21216

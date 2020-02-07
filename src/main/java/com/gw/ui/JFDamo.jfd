@@ -1,0 +1,166 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 560, 400 )
+			"resizable": false
+			"title": "test Session"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				"minimumSize": new java.awt.Dimension( 560, 400 )
+				"preferredSize": new java.awt.Dimension( 131, 400 )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					"minimumSize": new java.awt.Dimension( 16, 500 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "dialogPane"
+						"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+						"minimumSize": new java.awt.Dimension( 129, 500 )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+							"axis": 1
+						} ) {
+							name: "contentPanel"
+							"maximumSize": new java.awt.Dimension( 560, 24 )
+							"preferredSize": new java.awt.Dimension( 162, 24 )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 0
+							} ) {
+								name: "panel3"
+								"preferredSize": new java.awt.Dimension( 0, 60 )
+								"minimumSize": new java.awt.Dimension( 0, 60 )
+								"maximumSize": new java.awt.Dimension( 0, 60 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 0
+							} ) {
+								name: "panel1"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label1"
+									"text": "test Session    :"
+									"minimumSize": new java.awt.Dimension( 90, 10 )
+									"maximumSize": new java.awt.Dimension( 90, 24 )
+									"preferredSize": new java.awt.Dimension( 90, 24 )
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "comboBox1"
+									"maximumSize": new java.awt.Dimension( 460, 24 )
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "21204"
+										addElement( "21204" )
+										addElement( "21205" )
+										addElement( "21206" )
+										addElement( "21207" )
+										addElement( "21208" )
+										addElement( "21209" )
+										addElement( "21210" )
+										addElement( "21211" )
+										addElement( "21212" )
+										addElement( "21213" )
+									}
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 0
+							} ) {
+								name: "panel4"
+								"maximumSize": new java.awt.Dimension( 0, 30 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 0
+							} ) {
+								name: "panel2"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label2"
+									"text": "test Session ID:"
+									"maximumSize": new java.awt.Dimension( 90, 24 )
+									"preferredSize": new java.awt.Dimension( 90, 24 )
+									"minimumSize": new java.awt.Dimension( 90, 17 )
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "textField1"
+									"maximumSize": new java.awt.Dimension( 460, 24 )
+								} )
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "buttonBar"
+							"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "okButton"
+								"text": "Search"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", true ) )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "East"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "South"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Search"
+					"enabled": false
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel5"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel14"
+							"maximumSize": new java.awt.Dimension( 400, 326 )
+							"preferredSize": new java.awt.Dimension( 400, 326 )
+							"minimumSize": new java.awt.Dimension( 148, 326 )
+							"inheritsPopupMenu": true
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "text"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField2"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel7"
+							"minimumSize": new java.awt.Dimension( 105, 36 )
+							"preferredSize": new java.awt.Dimension( 105, 38 )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "back"
+								"text": "back"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "East"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField3"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "North"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "text"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "West"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "South"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "info"
+					"enabled": false
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 0 )
+			"size": new java.awt.Dimension( 490, 435 )
+		} )
+	}
+}
