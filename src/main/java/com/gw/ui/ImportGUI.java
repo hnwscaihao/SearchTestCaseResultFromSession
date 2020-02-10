@@ -40,7 +40,7 @@ import java.util.Map;
     Container con = getContentPane();//获得窗体容器对象
 
     public JComboBox cmb=new JComboBox();    //创建JComboBox
-    JTextField txtfield1=new JTextField(20);    //创建文本框
+    JTextField txtfield1=new JTextField(30);    //创建文本框
 
     public String sessionid = "";
     public  Map<String,String> caseIds = new HashMap<String,String>();
@@ -89,10 +89,8 @@ import java.util.Map;
         tab2(); //tab2
 
         initBtn(0);//按钮
-        int tabIndex = jtp.getSelectedIndex();
-        log.info("tab----------------"+tabIndex);
-
-        tabGUi1.setLayout(new BorderLayout());
+//        int tabIndex = jtp.getSelectedIndex();
+        tabGUi1.setLayout(new BorderLayout(20,-5));
         jtp.setPreferredSize(new Dimension(563,320));
         tabUp1.add(jtp);
         tabGUi1.add(tabUp1);
@@ -131,19 +129,21 @@ import java.util.Map;
     }
 
     public void tab1(){
-        JLabel btn1=new JLabel("test Case");
+        JLabel btn1=new JLabel("test Case :");
 //        cmb.addItem("--请选择--");    //向下拉列表中添加一项、
-        JLabel btn2=new JLabel("test Case ID");
+        JLabel btn2=new JLabel("test Case ID :");
         box1.add(Box.createHorizontalStrut(20));
         box1.add(btn1);
         box1.add(Box.createHorizontalStrut(25));
         box1.add(cmb);
+        cmb.setPreferredSize(new Dimension (30,28));
         cmb.addItem("——请选择——");
         box1.add(Box.createHorizontalStrut(20));
 
         box2.add(Box.createHorizontalStrut(20));
         box2.add(btn2);
         box2.add(Box.createHorizontalStrut(10));
+        txtfield1.setPreferredSize(new Dimension (30,26));
         box2.add(txtfield1);
         box2.add(Box.createHorizontalStrut(20));
 
@@ -308,20 +308,24 @@ import java.util.Map;
 
     public void initBtn(int index){
         tabUp2.removeAll();
+        JPanel jp = new JPanel();
         if(index == 0){
             JButton button = new JButton("Search");
             button.setFocusPainted(false);  //去掉按钮字体焦点框
             button.setPreferredSize(new Dimension(78,34));
+            button.setLocation(120,0);
             Listener1(button,1);
+            jp.add(button);
             tabUp2.setLayout(new BorderLayout());
-            tabUp2.add(button,BorderLayout.EAST);
+            tabUp2.add(jp,BorderLayout.EAST);
         }else {
             JButton button = new JButton("back");
             button.setFocusPainted(false);  //去掉按钮字体焦点框
             button.setPreferredSize(new Dimension(81,32));
             Listener1(button,0);
+            jp.add(button);
             tabUp2.setLayout(new BorderLayout());
-            tabUp2.add(button,BorderLayout.EAST);
+            tabUp2.add(jp,BorderLayout.EAST);
         }
 
     }

@@ -35,7 +35,7 @@ public class AnalysisXML {
 //           log.info("路劲----------------------"+s1);
 //           String pathxml = "F:\\lxg\\InfoMapping.xml";
            String pathxml = System.getProperty("user.home")+"\\InfoMapping.xml";
-           log.info("用户的主目录----------------------"+pathxml);
+//           log.info("用户的主目录----------------------"+pathxml);
            ClassPathResource resource = new ClassPathResource("\\InfoMapping.xml");
            //获取文件输入流
            InputStream in = resource.getInputStream();

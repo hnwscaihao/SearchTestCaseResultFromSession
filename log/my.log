@@ -1,46 +1,153 @@
-2020-02-09 00:03:57.826  INFO 5088 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 5088 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 00:03:57.830  INFO 5088 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 00:03:58.216  INFO 5088 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.7 seconds (JVM running for 10.969)
-2020-02-09 00:09:10.521  INFO 16872 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 16872 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 00:09:10.524  INFO 16872 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 00:09:10.923  INFO 16872 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.755 seconds (JVM running for 5.075)
-2020-02-09 00:09:36.444  INFO 7128 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 7128 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 00:09:36.446  INFO 7128 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 00:09:36.982  INFO 7128 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.907 seconds (JVM running for 3.956)
-2020-02-09 00:26:38.548  INFO 9476 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 9476 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 00:26:38.549  INFO 9476 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 00:26:38.989  INFO 9476 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.901 seconds (JVM running for 3.068)
-2020-02-09 00:26:41.957  INFO 9476 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------F:\lxg\myproject\SessionIdSearchResult
-2020-02-09 00:28:04.608  INFO 13376 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 13376 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 00:28:04.610  INFO 13376 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 00:28:05.135  INFO 13376 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.999 seconds (JVM running for 2.973)
-2020-02-09 00:28:06.699  INFO 13376 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------F:\lxg\myproject\SessionIdSearchResultsrc/main/resources/InfoMapping.xml
-2020-02-09 00:28:23.543  INFO 8952 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 8952 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 00:28:23.545  INFO 8952 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 00:28:24.128  INFO 8952 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 1.096 seconds (JVM running for 3.375)
-2020-02-09 00:28:25.538  INFO 8952 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------F:\lxg\myproject\SessionIdSearchResultsrc/main/resources/InfoMapping.xml
-2020-02-09 00:34:03.991  INFO 18116 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 18116 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 00:34:03.993  INFO 18116 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 00:34:04.381  INFO 18116 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.84 seconds (JVM running for 2.524)
-2020-02-09 00:34:26.333  INFO 18116 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------F:\lxg\myproject\SessionIdSearchResultsrc/main/resources/InfoMapping.xml
-2020-02-09 11:25:58.949  INFO 15536 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 15536 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 11:25:58.959  INFO 15536 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 11:25:59.427  INFO 15536 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.873 seconds (JVM running for 4.118)
-2020-02-09 11:26:02.159  INFO 15536 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------F:\lxg\myproject\SessionIdSearchResult\src\main\resources\InfoMapping.xml
-2020-02-09 11:26:05.902  INFO 15536 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------F:\lxg\myproject\SessionIdSearchResult\src\main\resources\InfoMapping.xml
-2020-02-09 11:40:10.753  INFO 9236 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 9236 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 11:40:10.755  INFO 9236 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 11:40:11.116  INFO 9236 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.717 seconds (JVM running for 2.674)
-2020-02-09 11:40:12.563  INFO 9236 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------F:\lxg\myproject\SessionIdSearchResult\target\classes\InfoMapping.xml
-2020-02-09 12:01:10.293  INFO 16528 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 16528 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 12:01:10.295  INFO 16528 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 12:01:10.738  INFO 16528 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.872 seconds (JVM running for 3.048)
-2020-02-09 12:01:12.434  INFO 16528 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 路劲----------------------/F:/lxg/myproject/SessionIdSearchResult/target/classes/InfoMapping.xml
-2020-02-09 12:50:27.238  INFO 13300 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 13300 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 12:50:27.239  INFO 13300 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
-2020-02-09 12:50:27.703  INFO 13300 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.904 seconds (JVM running for 2.723)
-2020-02-09 12:50:31.831  INFO 13300 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
-2020-02-09 12:50:36.477  INFO 13300 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
-2020-02-09 12:55:21.079  INFO 21444 --- [main] c.gw.ImportTestResultsApplicationTests   : Starting ImportTestResultsApplicationTests on DESKTOP-5VORDR2 with PID 21444 (started by dell in F:\lxg\myproject\SessionIdSearchResult)
-2020-02-09 12:55:21.081  INFO 21444 --- [main] c.gw.ImportTestResultsApplicationTests   : No active profile set, falling back to default profiles: default
-2020-02-09 12:55:21.445  INFO 21444 --- [main] c.gw.ImportTestResultsApplicationTests   : Started ImportTestResultsApplicationTests in 0.598 seconds (JVM running for 1.385)
+2020-02-10 09:34:22.460  INFO 14588 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 14588 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 09:34:22.460  INFO 14588 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 09:34:23.060  INFO 14588 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 1.008 seconds (JVM running for 38.568)
+2020-02-10 09:34:37.327  INFO 14588 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 09:45:29.542  INFO 13176 --- [main] c.gw.ImportTestResultsApplicationTests   : Starting ImportTestResultsApplicationTests on DESKTOP-5VORDR2 with PID 13176 (started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 09:45:29.542  INFO 13176 --- [main] c.gw.ImportTestResultsApplicationTests   : No active profile set, falling back to default profiles: default
+2020-02-10 09:45:29.882  INFO 13176 --- [main] c.gw.ImportTestResultsApplicationTests   : Started ImportTestResultsApplicationTests in 0.665 seconds (JVM running for 1.495)
+2020-02-10 10:11:31.890  INFO 7268 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 7268 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:11:31.943  INFO 7268 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:11:32.887  INFO 7268 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 1.434 seconds (JVM running for 6.041)
+2020-02-10 10:12:01.734  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:12:06.012  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:12:18.738  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:14:53.549  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:14:59.200  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:15:03.922  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:15:46.099  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:15:59.474  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:16:10.194  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:16:15.920  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:16:23.186  INFO 7268 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:19:12.275  INFO 6512 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 6512 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:19:12.277  INFO 6512 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:19:12.777  INFO 6512 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.95 seconds (JVM running for 2.886)
+2020-02-10 10:19:32.421  INFO 7648 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 7648 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:19:32.421  INFO 7648 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:19:32.911  INFO 7648 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.883 seconds (JVM running for 2.745)
+2020-02-10 10:23:39.055  INFO 10916 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 10916 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:23:39.056  INFO 10916 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:23:39.460  INFO 10916 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.805 seconds (JVM running for 2.679)
+2020-02-10 10:24:04.011  INFO 2016 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 2016 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:24:04.012  INFO 2016 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:24:04.460  INFO 2016 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.879 seconds (JVM running for 2.63)
+2020-02-10 10:24:30.264  INFO 2832 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 2832 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:24:30.265  INFO 2832 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:24:30.587  INFO 2832 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.581 seconds (JVM running for 4.643)
+2020-02-10 10:29:12.800  INFO 8724 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 8724 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:29:12.801  INFO 8724 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:29:13.217  INFO 8724 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.851 seconds (JVM running for 2.691)
+2020-02-10 10:29:19.589  INFO 8724 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:29:21.226  INFO 8724 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:29:24.240  INFO 8724 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:30:01.978  INFO 9204 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 9204 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:30:01.988  INFO 9204 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:30:02.403  INFO 9204 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.754 seconds (JVM running for 2.354)
+2020-02-10 10:30:23.038  INFO 7256 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 7256 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:30:23.039  INFO 7256 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:30:23.429  INFO 7256 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.799 seconds (JVM running for 2.452)
+2020-02-10 10:33:10.898  INFO 2500 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 2500 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:33:10.899  INFO 2500 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:33:11.297  INFO 2500 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.785 seconds (JVM running for 2.543)
+2020-02-10 10:33:54.319  INFO 11784 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 11784 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:33:54.321  INFO 11784 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:33:54.717  INFO 11784 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.784 seconds (JVM running for 2.587)
+2020-02-10 10:35:17.936  INFO 11636 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 11636 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:35:17.937  INFO 11636 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:35:18.313  INFO 11636 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.667 seconds (JVM running for 1.994)
+2020-02-10 10:35:22.154  INFO 11636 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:35:59.626  INFO 4484 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 4484 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:35:59.627  INFO 4484 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:36:00.018  INFO 4484 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.789 seconds (JVM running for 2.651)
+2020-02-10 10:36:08.012  INFO 4484 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:36:20.039  INFO 10100 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 10100 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:36:20.040  INFO 10100 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:36:20.443  INFO 10100 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.758 seconds (JVM running for 2.595)
+2020-02-10 10:36:24.153  INFO 10100 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:37:20.188  INFO 8208 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 8208 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:37:20.189  INFO 8208 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:37:20.512  INFO 8208 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.611 seconds (JVM running for 2.985)
+2020-02-10 10:37:26.210  INFO 8208 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:37:42.965  INFO 6296 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 6296 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:37:42.966  INFO 6296 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:37:43.323  INFO 6296 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.701 seconds (JVM running for 2.528)
+2020-02-10 10:38:15.713  INFO 2680 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 2680 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:38:15.714  INFO 2680 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:38:16.076  INFO 2680 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.696 seconds (JVM running for 2.498)
+2020-02-10 10:38:22.512  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:38:26.497  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:38:27.962  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:38:29.459  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:38:30.510  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:39:33.079  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:39:35.005  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:39:36.024  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:39:42.351  INFO 2680 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:45:37.661  INFO 15148 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 15148 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:45:37.663  INFO 15148 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:45:38.025  INFO 15148 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.665 seconds (JVM running for 2.319)
+2020-02-10 10:46:01.754  INFO 10100 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 10100 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:46:01.755  INFO 10100 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:46:02.136  INFO 10100 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.756 seconds (JVM running for 2.553)
+2020-02-10 10:46:12.195  INFO 3116 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 3116 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:46:12.197  INFO 3116 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:46:12.614  INFO 3116 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.902 seconds (JVM running for 2.666)
+2020-02-10 10:46:56.962  INFO 8100 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 8100 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:46:56.963  INFO 8100 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:46:57.334  INFO 8100 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.716 seconds (JVM running for 2.405)
+2020-02-10 10:49:42.904  INFO 2724 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 2724 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:49:42.905  INFO 2724 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:49:43.285  INFO 2724 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.706 seconds (JVM running for 2.5)
+2020-02-10 10:49:47.562  INFO 2724 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:49:48.971  INFO 2724 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:49:50.899  INFO 2724 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:50:07.583  INFO 2576 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 2576 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:50:07.585  INFO 2576 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:50:07.992  INFO 2576 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.803 seconds (JVM running for 2.55)
+2020-02-10 10:52:15.012  INFO 8700 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 8700 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:52:15.014  INFO 8700 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:52:15.438  INFO 8700 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.762 seconds (JVM running for 2.415)
+2020-02-10 10:52:43.193  INFO 232 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 232 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:52:43.194  INFO 232 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:52:43.629  INFO 232 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.783 seconds (JVM running for 2.531)
+2020-02-10 10:53:10.199  INFO 8260 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 8260 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:53:10.209  INFO 8260 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:53:10.610  INFO 8260 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.78 seconds (JVM running for 2.472)
+2020-02-10 10:53:22.442  INFO 13176 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 13176 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:53:22.443  INFO 13176 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:53:22.887  INFO 13176 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.825 seconds (JVM running for 2.495)
+2020-02-10 10:53:33.788  INFO 11636 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 11636 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:53:33.789  INFO 11636 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:53:34.116  INFO 11636 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.665 seconds (JVM running for 2.804)
+2020-02-10 10:53:45.274  INFO 5284 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 5284 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:53:45.275  INFO 5284 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:53:45.708  INFO 5284 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.804 seconds (JVM running for 2.958)
+2020-02-10 10:53:56.964  INFO 6496 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 6496 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:53:56.967  INFO 6496 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:53:57.478  INFO 6496 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 1.021 seconds (JVM running for 3.486)
+2020-02-10 10:54:02.973  INFO 6496 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:54:57.702  INFO 6424 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 6424 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:54:57.703  INFO 6424 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:54:58.058  INFO 6424 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.679 seconds (JVM running for 2.78)
+2020-02-10 10:55:01.926  INFO 6424 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:57:53.861  INFO 3272 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 3272 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:57:53.862  INFO 3272 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:57:54.256  INFO 3272 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.751 seconds (JVM running for 2.5)
+2020-02-10 10:58:10.271  INFO 7692 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 7692 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:58:10.281  INFO 7692 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:58:10.601  INFO 7692 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.623 seconds (JVM running for 2.733)
+2020-02-10 10:58:21.372  INFO 9272 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 9272 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:58:21.373  INFO 9272 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:58:21.752  INFO 9272 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.744 seconds (JVM running for 2.668)
+2020-02-10 10:58:44.842  INFO 11236 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 11236 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:58:44.843  INFO 11236 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:58:45.259  INFO 11236 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.77 seconds (JVM running for 2.627)
+2020-02-10 10:59:05.275  INFO 11784 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 11784 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:59:05.276  INFO 11784 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:59:05.650  INFO 11784 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.73 seconds (JVM running for 2.492)
+2020-02-10 10:59:09.168  INFO 11784 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 10:59:15.488  INFO 13980 --- [main] com.gw.ImportTestResultsApplication      : Starting ImportTestResultsApplication on DESKTOP-5VORDR2 with PID 13980 (F:\lxg\myproject\SessionIdSearchResult\target\classes started by dell in F:\lxg\myproject\SessionIdSearchResult)
+2020-02-10 10:59:15.489  INFO 13980 --- [main] com.gw.ImportTestResultsApplication      : No active profile set, falling back to default profiles: default
+2020-02-10 10:59:15.873  INFO 13980 --- [main] com.gw.ImportTestResultsApplication      : Started ImportTestResultsApplication in 0.777 seconds (JVM running for 2.589)
+2020-02-10 10:59:18.992  INFO 13980 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
+2020-02-10 11:00:09.562  INFO 13980 --- [AWT-EventQueue-0] com.gw.service.ImportService             : 用户的主目录----------------------C:\Users\dell\InfoMapping.xml
