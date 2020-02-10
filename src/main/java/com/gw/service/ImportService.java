@@ -74,7 +74,7 @@ public class ImportService {
                     datalist.add(data);
                 }
                 //合并excel数据 lxg
-                List<Map<String,String>> listMap = new ArrayList<>();
+                List<Map<String,String>> listMap = new ArrayList<Map<String,String>>();
                 for (List<String> l : datalist) {
                     if(l.size()>0){
                         int i = 0;

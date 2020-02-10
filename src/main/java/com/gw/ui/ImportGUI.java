@@ -5,13 +5,10 @@ import com.gw.ui.swingUI.InfiniteProgressPanel;
 import com.gw.util.MKSCommand;
 import com.gw.util.Result;
 import com.mks.api.response.APIException;
-import com.sun.xml.internal.ws.api.Component;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import javax.swing.*;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
@@ -21,13 +18,10 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 
-import static javax.swing.SpringLayout.*;
-
 /**
  * Swing面板 lxg
  *
- */
-public class ImportGUI extends JFrame {
+ */public class ImportGUI extends JFrame {
 
     private static final Log log = LogFactory.getLog(ImportService.class);
 
@@ -49,9 +43,10 @@ public class ImportGUI extends JFrame {
     JTextField txtfield1=new JTextField(20);    //创建文本框
 
     public String sessionid = "";
+    public  Map<String,String> caseIds = new HashMap<String,String>();
 
-    Map<String,String> testReulst; //查询返回的结果
-    Map<String,String> CaseReulst;
+    List<Map<String,String>> testReulst; //查询返回的结果
+    List<Map<String,String>> CaseReulst;
 
     Box box1 = Box.createHorizontalBox();
     Box box2 = Box.createHorizontalBox();
@@ -65,6 +60,9 @@ public class ImportGUI extends JFrame {
     Box box10= Box.createVerticalBox();
     JPanel jp1 = new JPanel();
     JPanel jp2 = new JPanel();
+    JPanel tabGUi1 = new JPanel();  //总容器
+    JPanel tabUp1 = new JPanel();   //
+    JPanel tabUp2 = new JPanel();
 
     //导入界面 lxg
     public void ImportGUI() {
@@ -73,18 +71,34 @@ public class ImportGUI extends JFrame {
         ImageIcon icon=new ImageIcon("client.jpg"); //图片和项目同一路径，故不用图片的路径
         setIconImage(icon.getImage());
 
+
         setTitle("查询测试实例");
-        setBounds(0, 0, 600, 400);
+        setBounds(0, 0, 580, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(springLayout);//设置窗体布局格式为弹簧式布局
         setLocationRelativeTo(null);//窗体居中显示
         setResizable(false);//窗体是否可以放大
 
+        //加载组件
+        Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+        glasspane.setBounds(100, 100, (dimension.width) / 2, (dimension.height) / 2);
+        setGlassPane(glasspane);
+
         tab1();//tab1
 
         tab2(); //tab2
 
-        add(jtp);
+        initBtn(0);//按钮
+        int tabIndex = jtp.getSelectedIndex();
+        log.info("tab----------------"+tabIndex);
+
+        tabGUi1.setLayout(new BorderLayout());
+        jtp.setPreferredSize(new Dimension(563,320));
+        tabUp1.add(jtp);
+        tabGUi1.add(tabUp1);
+        tabGUi1.add(tabUp2,BorderLayout.SOUTH);
+
+        add(tabGUi1);
         setVisible(true); //设置窗口是否可见
 
     }
@@ -101,13 +115,18 @@ public class ImportGUI extends JFrame {
 
         box9.add(box8);
         box9.add(box10);
-        box9.add(Box.createVerticalStrut(60));
+//        box9.add(Box.createVerticalStrut(60));
 //        box9.add(Box.createHorizontalStrut(500));
-        box9.add(box4);
-        Listener1(button1,0);
-
+//        box9.add(box4);
+//        Listener1(button1,0);
         jp2.add(box9);
-        jtp.addTab("info" ,jp2);
+        // 创建滚动面板, 指定滚动显示的视图组件(textArea), 垂直滚动条按需显示, 水平滚动条从不显示
+        JScrollPane scrollPane = new JScrollPane(
+                jp2,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER
+        );
+        jtp.addTab("info" ,scrollPane);
         jtp.setEnabledAt(1,false); //tab不可选
     }
 
@@ -119,6 +138,7 @@ public class ImportGUI extends JFrame {
         box1.add(btn1);
         box1.add(Box.createHorizontalStrut(25));
         box1.add(cmb);
+        cmb.addItem("——请选择——");
         box1.add(Box.createHorizontalStrut(20));
 
         box2.add(Box.createHorizontalStrut(20));
@@ -128,38 +148,47 @@ public class ImportGUI extends JFrame {
         box2.add(Box.createHorizontalStrut(20));
 
 //        box3.add(Box.createHorizontalStrut(200));
-        box3.add(Box.createVerticalStrut(80));
-        JButton button = new JButton("Search");
-        button.setFocusPainted(false);  //去掉按钮字体焦点框
-        box3.add(button);
-        Listener1(button,1);
+//        box3.add(Box.createVerticalStrut(80));
 
-        log.info("窗口宽高"+getSize());
-        box5.add(Box.createRigidArea(getSize()));
-        box5.add(Box.createVerticalStrut(-350));
+//        log.info("窗口宽高"+getSize());
+//        box5.add(Box.createRigidArea(getSize()));
+//        box5.add(Box.createVerticalStrut(-350));
 //        box5.add(Box.createVerticalGlue());
+        box5.add(Box.createVerticalStrut(60));
         box5.add(box1);
         box5.add(Box.createVerticalStrut(20));
         box5.add(box2);
-        box5.add(Box.createVerticalStrut(160));
-        box5.add(box3);
+//        box5.add(Box.createVerticalStrut(160));
+//        box5.add(box3);
 
         jp1.add(box5);
         jtp.addTab("Search" ,jp1);
         jtp.setEnabledAt(0,false);
+
     }
 
 
     //搜索按钮监听 lxg
-    public void Listener1(JButton btn1,int index) {
+    public void Listener1(JButton btn1, final int  index) {
         btn1.addMouseListener(new MouseAdapter(){
             public void mouseClicked(MouseEvent e){
                 if(index == 1){
                     MKSCommand m = new MKSCommand();
                     //获取session判断是否为空
-                    String testSession = cmb.getSelectedItem().toString();
+                    String caseName = cmb.getSelectedItem().toString();
+                    String testSession = "";
                     String testSessionId = txtfield1.getText();
-                    testReulst = new HashMap<>();
+                    int fla = 0;
+                    for(String s : caseIds.keySet()){
+                        if(caseName.equals(caseIds.get(s))){
+                            testSession = s;
+                        }
+                        if(testSessionId.equals(s)){
+                            fla ++;
+                        }
+                    }
+
+                    testReulst = new ArrayList<Map<String,String>>();
 
                     box6.removeAll();
                     box7.removeAll();
@@ -171,30 +200,38 @@ public class ImportGUI extends JFrame {
                         return;
                     }else if(!testSession.equals("")){
                         try {
-                            testReulst = m.viewresultByCaseID(sessionid,testSession);     //测试结果数据
-//                            CaseReulst =  m.viewIssueBySessionId(testSession,"caseId"); //case数据
-//                             m.getResult("",testSession,"Test Case");
-                            log.info("点击搜索session : " + sessionid+","+testSession);
+                            testReulst = m.viewresultByCaseID(sessionid,testSession);   //测试结果数据
+//                            CaseReulst =  m.viewIssueBySessionId(testSession,"caseId");
+//                            log.info("点击搜索session ID : " + sessionid+","+testSessionId);
                             jtp.setSelectedIndex(index);
-
+                            initBtn(1);
                             Swingfy();
                         } catch (APIException ex) {
+                            JOptionPane.showMessageDialog(null,ex.getMessage(),"错误",0);
                             ex.printStackTrace();
                         }
                     }else {
                         try {
-                            testReulst = m.viewresultByCaseID(sessionid,testSessionId);   //测试结果数据
-//                            CaseReulst =  m.viewIssueBySessionId(testSession,"caseId");
-                            log.info("点击搜索session ID : " + sessionid+","+testSessionId);
+                            if(fla == 0){
+                                JOptionPane.showMessageDialog(null,"填写的CaseID没有与testSession关联，请重新输入 !","错误",0);
+                                return;
+                            }
+                            testReulst = m.viewresultByCaseID(sessionid,testSessionId);     //测试结果数据
+//                            CaseReulst =  m.viewIssueBySessionId(testSession,"caseId"); //case数据
+//                             m.getResult("",testSession,"Test Case");
+//                            log.info("点击搜索session : " + sessionid+","+testSession);
                             jtp.setSelectedIndex(index);
-
+                            initBtn(1);
                             Swingfy();
+
                         } catch (APIException ex) {
+                            JOptionPane.showMessageDialog(null,ex.getMessage(),"错误",0);
                             ex.printStackTrace();
                         }
                     }
                 }else {
                     jtp.setSelectedIndex(index);
+                    initBtn(0);
                 }
 
 //                log.info("点击搜索");
@@ -208,37 +245,39 @@ public class ImportGUI extends JFrame {
         int i = 0;
         int box6L = 0;
         int box7L = 0;
-        for(String s : testReulst.keySet()){
-            String value  = testReulst.get(s);
+        for(Map<String,String> testMap : testReulst){
+            for(String s : testMap.keySet()){
+                String value  = testMap.get(s);
 //                                JLabel jl = new JLabel(s,JLabel.RIGHT);
-            JTextField jl=new JTextField(s,16);
-            jl.setEditable(false);  //不可编辑
-            jl.setBorder(null);  //不显示边框
-            jl.setHorizontalAlignment(JTextField.RIGHT);
-            JTextField jt=new JTextField(value,24);
-            jt.setEditable(false);  //不可编辑
+                JTextField jl=new JTextField(s,16);
+                jl.setEditable(false);  //不可编辑
+                jl.setBorder(null);  //不显示边框
+                jl.setHorizontalAlignment(JTextField.RIGHT);
+                JTextField jt=new JTextField(value,24);
+                jt.setEditable(false);  //不可编辑
 //                                jt.setBorder(null);  //不显示边框
-            JPanel jp = new JPanel();
-            jp.setSize(30,1);
-            if(s.equals("Annotation")){
-                JTextArea jta = new JTextArea(value,4,54);
-                jta.setEnabled(false);
-                JPanel jpl = new JPanel();
-                jpl.add(jl);
-                jpl.add(jta);
-                box10.add(jpl);
-            }else {
-                jp.add(jl);
-                jp.add(jt);
-                if(i<testReulst.size()/2){
-                    box6.add(jp);
-                    box6L++;
-                }else {
-                    box7.add(jp);
-                    box7L++;
+                JPanel jp = new JPanel();
+                jp.setSize(30,1);
+                if(s.equals("Annotation")){      //文本域单独box
+                    JTextArea jta = new JTextArea(value,4,54);
+                    jta.setEnabled(false);
+                    JPanel jpl = new JPanel();
+                    jpl.add(jl);
+                    jpl.add(jta);
+                    box10.add(jpl);
+                }else {                     //输入框每竖行一个box
+                    jp.add(jl);
+                    jp.add(jt);
+                    if(i<testReulst.size()/2){
+                        box6.add(jp);
+                        box6L++;
+                    }else {
+                        box7.add(jp);
+                        box7L++;
+                    }
                 }
+                i++;
             }
-            i++;
         }
         if(box6L<box7L){  //保持2个box对称
             JPanel jpls = new JPanel();
@@ -254,5 +293,36 @@ public class ImportGUI extends JFrame {
             box7.add(jpls.add(jl));
         }
     }
+//大于10的字体缩略
+    public String textxz(String str){
+        String  r = "";
+        log.info("字符串长度："+str.length());
+        if(str.length()>20){
+            r = str.substring(0,20) + "...";
+        }else {
+            r = str;
+        }
+        log.info("缩略后字符串："+r );
+        return r;
+    }
 
+    public void initBtn(int index){
+        tabUp2.removeAll();
+        if(index == 0){
+            JButton button = new JButton("Search");
+            button.setFocusPainted(false);  //去掉按钮字体焦点框
+            button.setPreferredSize(new Dimension(78,34));
+            Listener1(button,1);
+            tabUp2.setLayout(new BorderLayout());
+            tabUp2.add(button,BorderLayout.EAST);
+        }else {
+            JButton button = new JButton("back");
+            button.setFocusPainted(false);  //去掉按钮字体焦点框
+            button.setPreferredSize(new Dimension(81,32));
+            Listener1(button,0);
+            tabUp2.setLayout(new BorderLayout());
+            tabUp2.add(button,BorderLayout.EAST);
+        }
+
+    }
 }

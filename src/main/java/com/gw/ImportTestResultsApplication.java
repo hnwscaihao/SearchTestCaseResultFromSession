@@ -11,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.mks.api.commands.*;
 import javax.swing.*;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -38,10 +40,15 @@ public class ImportTestResultsApplication {
                     System.exit(0);
                 }else {
                     List<String> caseIds = l.get("caseIds");
-                    for(String s  : caseIds){
-                        imp.cmb.addItem(s);
+                    Map<String,String> ids = new HashMap<String,String>();
+                    List<Map<String, String>> caseName = m.getItemByIds(caseIds, Arrays.asList("Text","id"));//查询文档id包含字段heading
+                    for(Map<String, String> s  : caseName){
+                        String casename = imp.textxz(s.get("Text"));
+                        imp.cmb.addItem(casename);
+                        ids.put(s.get("id"),casename);
                     }
                     imp.sessionid = l.get("tsIds").get(0);
+                    imp.caseIds = ids;
                     imp.glasspane.stop();
                 }
             }else {

@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.logging.Logger;
 
-import static com.gw.util.AnalysisXML.resultXml;
+import  com.gw.util.AnalysisXML;
 
 public class MKSCommand {
 
@@ -43,7 +43,7 @@ public class MKSCommand {
 
 	public static final Map<String, String> ENVIRONMENTVAR = System.getenv();
 	public static MKSCommand cmd;
-	public static List<String> tsIds = new ArrayList<>();
+	public static List<String> tsIds = new ArrayList<String>();
 	private static String DOCUMENT_TYPE ;
 	private static String documentName ;
 	private static List<String> typeList = null;
@@ -318,7 +318,7 @@ public class MKSCommand {
 	public List<Map<String, String>> mlsj() {
 		List<Map<String, String>> list = new ArrayList<Map<String, String>>();
 		for(int i=0;i<10;i++){
-			Map<String,String> m = new HashMap<>();
+			Map<String,String> m = new HashMap<String,String>();
 			m.put("CaseID","1111");
 			m.put("TestType","2222");
 			m.put("description","3333");
@@ -406,7 +406,7 @@ public class MKSCommand {
 		Response res = mksCmdRunner.execute(command);
 		WorkItemIterator it = res.getWorkItems();
 		SelectionList sl = new SelectionList();
-		List<String> fields = new ArrayList<>();
+		List<String> fields = new ArrayList<String>();
 		fields.add("ID");
 		if(!fieldList.contains(PARENT_FIELD)){//排序使用
 			fieldList.add(PARENT_FIELD);
@@ -596,7 +596,7 @@ public class MKSCommand {
 	}
 	
 	public List<String> getTestSteps(List<String> realStepFields) throws APIException {
-		List<String> fieldList = new ArrayList<>();
+		List<String> fieldList = new ArrayList<String>();
 		if (fieldList.isEmpty()) {
 			fieldList.add("ID");
 			fieldList.add("Test Input");
@@ -612,7 +612,7 @@ public class MKSCommand {
 			throw new APIException("invoke findIssuesByQueryDef() ----- query is null or empty.");
 		}
 		if (fields == null) {
-			fields = new ArrayList<>();
+			fields = new ArrayList<String>();
 		}
 		if (fields.size() < 1) {
 			fields.add("ID");
@@ -630,11 +630,11 @@ public class MKSCommand {
 //		command.addOption(new Option("showTestResults"));
 		Response res = mksCmdRunner.execute(command);
 		WorkItemIterator it = res.getWorkItems();
-		List<Map<String, String>> list = new ArrayList<>();
+		List<Map<String, String>> list = new ArrayList<Map<String, String>>();
 		while (it.hasNext()) {
 				WorkItem wi = it.next();
 				Iterator<?> iterator = wi.getFields();
-				Map<String, String> map = new HashMap<>();
+				Map<String, String> map = new HashMap<String, String>();
 				while (iterator.hasNext()) {
 					Field field = (Field) iterator.next();
 					String fieldName = field.getName();
@@ -691,7 +691,7 @@ public class MKSCommand {
 		while (it.hasNext()) {
 			WorkItem wi = it.next();
 			Iterator<?> iterator = wi.getFields();
-			Map<String, String> map = new HashMap<>();
+			Map<String, String> map = new HashMap<String, String>();
 			while (iterator.hasNext()) {
 				Field field = (Field) iterator.next();
 				String fieldName = field.getName();
@@ -734,7 +734,7 @@ public class MKSCommand {
 		Response res = mksCmdRunner.execute(cmd);
 		WorkItemIterator it = res.getWorkItems();
 		List<Map<String, String>> relations = new ArrayList<Map<String, String>>();
-		Map<String, String> map = new HashMap<>();
+		Map<String, String> map = new HashMap<String, String>();
 		while (it.hasNext()) {
 			WorkItem wi = it.next();
 			Iterator<?> iterator = wi.getFields();
@@ -766,14 +766,16 @@ public class MKSCommand {
 				}
 				//如果是caseId 则查询caseId相关信息 lxg
 				if("caseId".equals(idType)){
-					Result r  =  resultXml();
-					Map<String,String> m  = (Map<String,String>)r.getData();
-					for(String key : m.keySet()){
-						String velue = m.get(key);
-						logger.info(fieldName +"++++++++"+velue+"=========="+fieldName .equals(velue));
-						if(velue.equals(fieldName)){
-							String il =  field.getValue()==null?"":field.getValue().toString();
-							map.put(key, il);
+					Result r  =  new AnalysisXML().resultXml();
+					List<Map<String,String>> m  = (List<Map<String,String>>)r.getData();
+					for(Map<String,String> mi: m){
+						for(String key : mi.keySet()){
+							String velue = mi.get(key);
+							logger.info(fieldName +"++++++++"+velue+"=========="+fieldName .equals(velue));
+							if(velue.equals(fieldName)){
+								String il =  field.getValue()==null?"":field.getValue().toString();
+								map.put(key, il);
+							}
 						}
 					}
 				}
@@ -791,16 +793,18 @@ public class MKSCommand {
 	 * @return
 	 * @throws APIException
 	 */
-	public Map<String, String> viewresultByCaseID(String SesssionId, String CaseID) throws APIException {
+	public List<Map<String,String>> viewresultByCaseID(String SesssionId, String CaseID) throws APIException {
 		Command cmd = new Command("tm", "results");
 
 		cmd.addOption(new Option("caseID", CaseID));
-		List<String> fields = new ArrayList<>();
-		Result r  =  resultXml();
-		Map<String,String> m  = (Map<String,String>)r.getData();
-		for(String key : m.keySet()){
-			String velue = m.get(key);
-			fields.add(velue);
+		List<String> fields = new ArrayList<String>();
+		Result r  =  new AnalysisXML().resultXml();
+		List<Map<String,String>> m  = (List<Map<String,String>>)r.getData();
+		for(Map<String,String> mi: m){
+			for(String key : mi.keySet()){
+				String velue = mi.get(key);
+				fields.add(velue);
+			}
 		}
 		MultiValue mv = new MultiValue();
 		mv.setSeparator(",");
@@ -810,18 +814,24 @@ public class MKSCommand {
 		cmd.addOption(new Option("fields", mv));
 		Response res = mksCmdRunner.execute(cmd);
 		WorkItemIterator it = res.getWorkItems();
-		Map<String, String> map = new HashMap<>();
+		List<Map<String,String>> map = new ArrayList<Map<String,String>>();
+		Map<String,String> resultMap = new HashMap<String,String>();
 		while (it.hasNext()) {
 			WorkItem wi = it.next();
 			Iterator<?> iterator = wi.getFields();
 			while (iterator.hasNext()) {
 				Field field = (Field) iterator.next();
-				for(String key : m.keySet()){
-					String velue = m.get(key);
-					String fieldName = field.getName();
-					if(velue.equals(fieldName)){
-						String il =  field.getValue()==null?"":field.getValue().toString();
-						map.put(key, il);
+				resultMap.put(field.getName(),field.getValue()==null?"":field.getValue().toString());
+			}
+		}
+		//根据xml内容遍历 （主要是排序）
+		for(Map<String,String> mi: m){
+			for(String key : mi.keySet()){
+				for(String s : resultMap.keySet()){
+					if(mi.get(key).equals(s)){
+						Map<String,String> lsm = new HashMap<String,String>();
+						lsm.put(key, resultMap.get(s));
+						map.add(lsm);
 					}
 				}
 			}
@@ -830,7 +840,7 @@ public class MKSCommand {
 	}
 
 	public List<Map<String, Object>> getResult(String sessionID, String suiteID, String type) throws APIException {
-		List<Map<String, Object>> result = new ArrayList<>();
+		List<Map<String, Object>> result = new ArrayList<Map<String, Object>>();
 		SelectionList list = new SelectionList();
 		Command cmd = new Command("tm", "results");
 		
@@ -840,7 +850,7 @@ public class MKSCommand {
 //		} else if (type.equals("Test Case")) {
 //			cmd.addSelection(sessionID);
 //		}
-		List<String> fields = new ArrayList<>();
+		List<String> fields = new ArrayList<String>();
 		fields.add("caseID");
 		fields.add("sessionID");
 		fields.add("verdict");
@@ -865,7 +875,7 @@ public class MKSCommand {
 			res = mksCmdRunner.execute(cmd);
 			WorkItemIterator wk = res.getWorkItems();
 			while (wk.hasNext()) {
-				Map<String, Object> map = new HashMap<>();
+				Map<String, Object> map = new HashMap<String, Object>();
 				WorkItem wi = wk.next();
 				for (String field : fields) {
 					Object value = wi.getField(field).getValue();
@@ -878,7 +888,7 @@ public class MKSCommand {
 				res = mksCmdRunner.execute(cmd);
 				WorkItemIterator wk = res.getWorkItems();
 				while (wk.hasNext()) {
-					Map<String, Object> map = new HashMap<>();
+					Map<String, Object> map = new HashMap<String, Object>();
 					WorkItem wi = wk.next();
 					for (String field : fields) {
 						Object value = wi.getField(field).getValue();
@@ -1005,13 +1015,13 @@ public class MKSCommand {
 		}
 	}
 
-	/**
+	/**issues
 	 * 获取当前选中id的List集合
 	 * @return
 	 * @throws Exception
 	 */
 	public static Map<String,List<String>> getSelectedIdList() throws Exception {
-		List<String> caseIds = new ArrayList<>();
+		List<String> caseIds = new ArrayList<String>();
 		String issueCount = ENVIRONMENTVAR.get(Constants.MKSSI_NISSUE);
 		if (issueCount != null && issueCount.trim().length() > 0) {
 			for (int index = 0; index < Integer.parseInt(issueCount); index++) {
@@ -1025,7 +1035,7 @@ public class MKSCommand {
 		tsIds.add("21203");
 		if (tsIds.size() > 0) {//如果选中的id集合不为空，通过id获取条目简要信息
 			List<Map<String, String>> itemByIds = cmd.getItemByIds(tsIds, Arrays.asList("ID", "Type","Summary","Tests"));
-			List<String> notTSList = new ArrayList<>();
+			List<String> notTSList = new ArrayList<String>();
 			for (Map<String, String> map : itemByIds) {
 				DOCUMENT_TYPE = map.get("Type");
 				String id = map.get("ID");
@@ -1049,7 +1059,7 @@ public class MKSCommand {
 		} else {
 			throw new Exception("Please select the ID of a Document!");
 		}
-		Map<String,List<String>> r = new HashMap<>();
+		Map<String,List<String>> r = new HashMap<String,List<String>>();
 		r.put("tsIds",tsIds);
 		r.put("caseIds",caseIds);
 		return r;
